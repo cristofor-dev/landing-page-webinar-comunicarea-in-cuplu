@@ -197,6 +197,30 @@
   .who strong{display:block;font-size:.8rem;letter-spacing:.14em;text-transform:uppercase;color:var(--green-900)}
   .who span{font-size:.85rem;color:var(--muted)}
 
+  /* recomandări Facebook, în stilul unei capturi */
+  .fb-head{text-align:center;margin:3.4rem 0 1.4rem}
+  .fb-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;align-items:start}
+  .fb-card{background:#fff;border-radius:8px;box-shadow:0 1px 2px rgba(0,0,0,.2);padding:12px 16px 4px;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;color:#050505;font-weight:400;line-height:1.3333}
+  .fb-top{display:flex;gap:8px;align-items:flex-start;margin-bottom:10px}
+  .fb-av{width:40px;height:40px;border-radius:50%;object-fit:cover;flex:none}
+  .fb-meta{flex:1;min-width:0}
+  .fb-line{font-size:15px;line-height:1.3}
+  .fb-line b{font-weight:600}
+  .fb-gray{color:#65676B}
+  .fb-rec{width:15px;height:15px;vertical-align:-2px}
+  .fb-date{font-size:13px;color:#65676B;margin-top:2px;display:flex;align-items:center;gap:5px}
+  .fb-date svg{width:12px;height:12px;color:#65676B}
+  .fb-dots{color:#65676B;font-weight:700;letter-spacing:1px;line-height:1}
+  .fb-blur{filter:blur(4.5px);user-select:none;-webkit-user-select:none}
+  .fb-text{font-size:15px;color:#050505;overflow-wrap:anywhere}
+  .fb-actions{display:flex;align-items:center;gap:18px;border-top:1px solid #CED0D4;margin-top:12px;padding:8px 2px;color:#65676B;font-size:15px}
+  .fb-actions > span{display:inline-flex;align-items:center;gap:5px}
+  .fb-actions svg{width:20px;height:20px}
+  .fb-actions em{font-style:normal}
+  .fb-likebadge{display:inline-flex;align-items:center;justify-content:center;width:18px;height:18px;border-radius:50%;background:#0866FF}
+  .fb-likebadge svg{width:11px;height:11px}
+  .fb-link{text-align:center;margin-top:1.6rem;font-size:.85rem;font-weight:500}
+  .fb-link a{color:var(--green-700)}
   /* loc liber pentru imagini */
   .ph{
     display:flex;align-items:center;justify-content:center;text-align:center;
@@ -281,7 +305,7 @@
     .hero-text{padding-bottom:0}
     .hero-photo{max-width:400px}
     .about-photo,.final-photo{max-width:400px;margin:0 auto}
-    .scenes,.testi-grid,.cred-grid{grid-template-columns:1fr}
+    .scenes,.testi-grid,.cred-grid,.fb-grid{grid-template-columns:1fr}
     .foot-grid{grid-template-columns:1fr}
     .burst{right:0;width:108px;height:108px}
   }
@@ -463,17 +487,94 @@
       </article>
       <article class="testi">
         <div class="q">“</div>
-        <p>[Testimonial 2: textul participantei, 2 sau 3 propoziții despre ce s-a schimbat în casa ei.]</p>
-        <div class="who"><div class="ph avatar">POZĂ</div><div><strong>[Prenume]</strong><span>[soție și mamă, oraș]</span></div></div>
+        <div class="txt">
+          <p>Pentru mine este important să fac parte dintr-o comunitate de mame, iar aici am găsit mame cu valori comune pentru a crește în credință.</p>
+          <p>Am fost mulți ani singură pe drum și simt că Domnul a avut grijă de mine ca să găsesc un grup și în care să creștem împreună.</p>
+          <p>Informațiile pe care le-am primit, parcursurile făcute, m-au ajutat nu doar pe moment, ci sunt utile/le pun în practică în momentele în care reapar provocări.</p>
+          <p>Mulțumim că o avem pe Annamaria Roșu, că a inspirat-o Spiritul Sfânt și că ea și-a urmat vocația. Mulțumim pentru munca și dăruirea ta!</p>
+        </div>
+        <div class="who"><img class="avatar" loading="lazy" decoding="async" src="images/ana-i.jpg" alt="Ana I." width="320" height="320"><div><strong>Ana I.</strong><span>membră a comunității</span></div></div>
       </article>
       <article class="testi">
         <div class="q">“</div>
-        <p>[Testimonial 3: textul participantei, 2 sau 3 propoziții despre ce s-a schimbat în casa ei.]</p>
-        <div class="who"><div class="ph avatar">POZĂ</div><div><strong>[Prenume]</strong><span>[soție și mamă, oraș]</span></div></div>
+        <div class="txt">
+          <p>Am intrat în comunitatea Annei pentru că îmi doream să fiu înconjurată de oameni care împărtășesc aceleași valori și își doresc să crească, atât personal, cât și spiritual.</p>
+          <p>În Anna am găsit un om autentic, care trăiește ceea ce ne învață. Fiecare temă m-a ajutat să îmi înțeleg mai bine identitatea, să fiu mai atentă la gândurile mele și să am mai multă încredere că, alături de Dumnezeu, pot face schimbări reale în viața mea.</p>
+          <p>Pentru mine, această comunitate este un loc în care învăț, cresc și îmi reamintesc constant cine sunt și ce contează cu adevărat. Sunt recunoscătoare că fac parte din ea și o recomand din toată inima celor care își doresc o dezvoltare personală bazată pe credință, autenticitate și valori.</p>
+        </div>
+        <div class="who"><img class="avatar" loading="lazy" decoding="async" src="images/adriana-m.jpg" alt="Adriana M." width="320" height="320"><div><strong>Adriana M.</strong><span>membră a comunității</span></div></div>
       </article>
     </div>
 
-    <div class="ph wide">LOC LIBER PENTRU IMAGINE<br>capturi cu mesaje din grupul de WhatsApp sau o poză de la o întâlnire a comunității</div>
+    <div class="fb-head">
+      <span class="caps">Recomandări pe Facebook</span>
+    </div>
+    <div class="fb-grid">
+      <article class="fb-card" aria-label="Recomandare pe Facebook de la Ileana">
+        <div class="fb-top">
+          <img class="fb-av" src="images/fb-ileana.jpg" alt="" width="40" height="40" loading="lazy">
+          <div class="fb-meta">
+            <p class="fb-line"><b>Ileana <span class="fb-blur" aria-hidden="true">xxxxx</span></b> <svg class="fb-rec" viewBox="0 0 16 16" aria-hidden="true"><rect width="16" height="16" rx="3" fill="#F3425F"/><path fill="#fff" d="M8 3.2l1.4 2.9 3.2.4-2.3 2.2.6 3.2L8 10.4 5.1 11.9l.6-3.2L3.4 6.5l3.2-.4z"/></svg> <span class="fb-gray">recommends</span> <b>Annamaria Rosu</b>.</p>
+            <p class="fb-date">February 19 <svg viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.3" fill="none" stroke="currentColor" stroke-width="1.4"/><path d="M1.8 8h12.4M8 1.7c-2 2-2 10.6 0 12.6M8 1.7c2 2 2 10.6 0 12.6" fill="none" stroke="currentColor" stroke-width="1.2"/></svg></p>
+          </div>
+          <span class="fb-dots" aria-hidden="true">···</span>
+        </div>
+        <p class="fb-text">A ști să pui întrebările potrivite nu e întotdeauna ușor... Câteodată nu găsim răspunsul pentru ca nu ne punem  corect întrebarea. Avem nevoie de cineva din afara noastră ca să ne vedem mai bine.<br>
+Întâlnirile cu Annamaria m-au ajutat să găsesc piesa de puzzle care lipsea. Mi-au schimbat perspectiva și m-au făcut să gust din "viața cea adevărată".</p>
+        <div class="fb-actions">
+          <span><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M6 9v8H3V9zM6 9l3.5-6.5c1.2 0 2 .9 2 2V8h4.2c1 0 1.7.9 1.5 1.9l-1.2 5.6c-.2.9-1 1.5-1.9 1.5H6" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg></span><span class="fb-count"><span class="fb-likebadge" aria-hidden="true"><svg viewBox="0 0 16 16"><path fill="#fff" d="M5 7v6H3V7zM5 7l2.5-4.3c.8 0 1.3.6 1.3 1.4V6.3h3c.7 0 1.2.6 1 1.3l-.8 3.9c-.1.6-.7 1-1.3 1H5"/></svg></span>1</span><span><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M10 2.5c4.4 0 7.5 2.9 7.5 6.7S14.4 15.9 10 15.9c-.8 0-1.6-.1-2.3-.3L3.5 17.5l1-3.4C3.2 12.9 2.5 11.2 2.5 9.2 2.5 5.4 5.6 2.5 10 2.5z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg><em>1</em></span>
+        </div>
+      </article>
+      <article class="fb-card" aria-label="Recomandare pe Facebook de la Petruta">
+        <div class="fb-top">
+          <img class="fb-av" src="images/fb-petruta.jpg" alt="" width="40" height="40" loading="lazy">
+          <div class="fb-meta">
+            <p class="fb-line"><b><span class="fb-blur" aria-hidden="true">xxxx</span> Petruta</b> <svg class="fb-rec" viewBox="0 0 16 16" aria-hidden="true"><rect width="16" height="16" rx="3" fill="#F3425F"/><path fill="#fff" d="M8 3.2l1.4 2.9 3.2.4-2.3 2.2.6 3.2L8 10.4 5.1 11.9l.6-3.2L3.4 6.5l3.2-.4z"/></svg> <span class="fb-gray">recommends</span> <b>Annamaria Rosu</b>.</p>
+            <p class="fb-date">January 23 <svg viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.3" fill="none" stroke="currentColor" stroke-width="1.4"/><path d="M1.8 8h12.4M8 1.7c-2 2-2 10.6 0 12.6M8 1.7c2 2 2 10.6 0 12.6" fill="none" stroke="currentColor" stroke-width="1.2"/></svg></p>
+          </div>
+          <span class="fb-dots" aria-hidden="true">···</span>
+        </div>
+        <p class="fb-text">Dumnezeu lucrează prin oameni - asta am știut și am crezut mereu, dar experienta pe care am trăit-o alături de Annamaria, a fost atât de profunda, încât nici mie nu îmi vine sa cred! 🙏<br>
+Viata mea arată total diferit după colaborarea cu ea. Schimbări radicale au avut loc în multe aspecte ale vieții mele, niciunul ramanand neatins.<br>
+Annamaria este omul în fata căruia nu ai cum sa nu reușești sa îți deschizi inima, nu ai cum sa nu simți energia pozitiva care izvorăște din ea.<br>
+Îți mulțumesc mult draga mea prietena pentru tot ajutorul și dăruirea ta! Nu ești doar un om minunat, ești și un profesionist în tot ceea ce faci cu ajutorul lui Dumnezeu. Îți doresc să se întoarcă înmiit în viata ta!<br>
+Colaborarea cu Annamaria este un "must do" pentru o viata sănătoasă!<br>
+Recomand asta din toată inima! ❤️</p>
+        <div class="fb-actions">
+          <span><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M6 9v8H3V9zM6 9l3.5-6.5c1.2 0 2 .9 2 2V8h4.2c1 0 1.7.9 1.5 1.9l-1.2 5.6c-.2.9-1 1.5-1.9 1.5H6" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg></span><span><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M10 2.5c4.4 0 7.5 2.9 7.5 6.7S14.4 15.9 10 15.9c-.8 0-1.6-.1-2.3-.3L3.5 17.5l1-3.4C3.2 12.9 2.5 11.2 2.5 9.2 2.5 5.4 5.6 2.5 10 2.5z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg><em>1</em></span>
+        </div>
+      </article>
+      <article class="fb-card" aria-label="Recomandare pe Facebook de la Irina">
+        <div class="fb-top">
+          <img class="fb-av" src="images/fb-irina.jpg" alt="" width="40" height="40" loading="lazy">
+          <div class="fb-meta">
+            <p class="fb-line"><b>Irina <span class="fb-blur" aria-hidden="true">xxxxx</span></b> <svg class="fb-rec" viewBox="0 0 16 16" aria-hidden="true"><rect width="16" height="16" rx="3" fill="#F3425F"/><path fill="#fff" d="M8 3.2l1.4 2.9 3.2.4-2.3 2.2.6 3.2L8 10.4 5.1 11.9l.6-3.2L3.4 6.5l3.2-.4z"/></svg> <span class="fb-gray">recommends</span> <b>Annamaria Rosu</b>.</p>
+            <p class="fb-date">January 3 <svg viewBox="0 0 16 16" aria-hidden="true"><circle cx="6" cy="5.5" r="2.3" fill="currentColor"/><circle cx="11" cy="6" r="1.9" fill="currentColor"/><path d="M1.5 13c.4-2.4 2.2-3.7 4.5-3.7S10.1 10.6 10.5 13zM10.2 9.4c2 0 3.7 1.1 4.2 3.6h-3.1c-.2-1.4-.6-2.6-1.1-3.6z" fill="currentColor"/></svg></p>
+          </div>
+          <span class="fb-dots" aria-hidden="true">···</span>
+        </div>
+        <p class="fb-text">A fost una dintre cele mai reale experiente din viata mea si am reusit alaturi de Ana sa ma cunosc si sa ma dezvolt, poate nu pe deplin dar cu siguranta la intensitate maxima. Este o forma inovativa si uimitoare de dezvoltare, disciplinare si formare pe orice fel de plan dar mai ales interior/spiritual. Ba mai mult, parcurgand acest drum nu numai ca m-am imbunatatit pe mine si calitatea vietii mele dar si a celor din jurul meu! Recomand cu tarie si caldura tutuor sa incerce macar odata in viata life-coaching-ul, indiferent de probleme lare le au si indiferent de cine sunt acele persoane. Multumesc din suflet Ana!<br>
+Irina ❤️</p>
+        <div class="fb-actions">
+          <span><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M6 9v8H3V9zM6 9l3.5-6.5c1.2 0 2 .9 2 2V8h4.2c1 0 1.7.9 1.5 1.9l-1.2 5.6c-.2.9-1 1.5-1.9 1.5H6" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg></span><span><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M10 2.5c4.4 0 7.5 2.9 7.5 6.7S14.4 15.9 10 15.9c-.8 0-1.6-.1-2.3-.3L3.5 17.5l1-3.4C3.2 12.9 2.5 11.2 2.5 9.2 2.5 5.4 5.6 2.5 10 2.5z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg><em>1</em></span>
+        </div>
+      </article>
+      <article class="fb-card" aria-label="Recomandare pe Facebook de la Teodora">
+        <div class="fb-top">
+          <img class="fb-av" src="images/fb-teodora.jpg" alt="" width="40" height="40" loading="lazy">
+          <div class="fb-meta">
+            <p class="fb-line"><b>Teodora <span class="fb-blur" aria-hidden="true">xxxxx</span></b> <svg class="fb-rec" viewBox="0 0 16 16" aria-hidden="true"><rect width="16" height="16" rx="3" fill="#F3425F"/><path fill="#fff" d="M8 3.2l1.4 2.9 3.2.4-2.3 2.2.6 3.2L8 10.4 5.1 11.9l.6-3.2L3.4 6.5l3.2-.4z"/></svg> <span class="fb-gray">recommends</span> <b>Annamaria Rosu</b>.</p>
+            <p class="fb-date">January 1 <svg viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.3" fill="none" stroke="currentColor" stroke-width="1.4"/><path d="M1.8 8h12.4M8 1.7c-2 2-2 10.6 0 12.6M8 1.7c2 2 2 10.6 0 12.6" fill="none" stroke="currentColor" stroke-width="1.2"/></svg></p>
+          </div>
+          <span class="fb-dots" aria-hidden="true">···</span>
+        </div>
+        <p class="fb-text">Cel mai bun mod de a trăi cu adevărat este să înveți să îți coordonezi creierul și să alegi acele emoții care te ajută să crești. Ana m-a ajutat foarte mult să îmi organizez proiectele, să îmi pun ordine în gânduri și să iau o decizie importantă. O recomand cu toată inima oricui vrea să găsească soluții la gânduri sau situații care  tot revin sau ne țin pe loc. Anamaria e o persoană extrem de caldă, empatică, susținătoare! Am avut alte tangențe cu coaching-ul de-a lungul anilor, dar plusul pe care l-a adus Ana pentru mine, pe lângă calitățile ei umane, a fost faptul că e creștin practicant și asta m-a făcut să mă conectez ușor cu ea și să aduc în discuție și partea spirituală. Multumesc Ana! ❤️🙌</p>
+        <div class="fb-actions">
+          <span><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M6 9v8H3V9zM6 9l3.5-6.5c1.2 0 2 .9 2 2V8h4.2c1 0 1.7.9 1.5 1.9l-1.2 5.6c-.2.9-1 1.5-1.9 1.5H6" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg></span><span class="fb-count"><span class="fb-likebadge" aria-hidden="true"><svg viewBox="0 0 16 16"><path fill="#fff" d="M5 7v6H3V7zM5 7l2.5-4.3c.8 0 1.3.6 1.3 1.4V6.3h3c.7 0 1.2.6 1 1.3l-.8 3.9c-.1.6-.7 1-1.3 1H5"/></svg></span>1</span><span><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M10 2.5c4.4 0 7.5 2.9 7.5 6.7S14.4 15.9 10 15.9c-.8 0-1.6-.1-2.3-.3L3.5 17.5l1-3.4C3.2 12.9 2.5 11.2 2.5 9.2 2.5 5.4 5.6 2.5 10 2.5z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg><em>1</em></span>
+        </div>
+      </article>
+    </div>
+    <p class="fb-link"><a href="https://www.facebook.com/viataceaadevarata/reviews/" target="_blank" rel="noopener">Vezi recomandările pe pagina de Facebook „Viața cea adevărată”</a></p>
   </div>
 </section>
 
