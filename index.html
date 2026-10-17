@@ -237,7 +237,7 @@
   /* ---------- DESPRE ---------- */
   .about{background:var(--mist)}
   .about-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:60px;align-items:center}
-  .about-photo img{border-radius:6px;width:100%;aspect-ratio:4/5;object-fit:cover;object-position:center 20%;box-shadow:var(--shadow)}
+  .about-photo img{border-radius:6px;width:100%;aspect-ratio:4/5;object-fit:cover;object-position:center bottom;box-shadow:var(--shadow)}
   .about p{color:var(--muted);margin-bottom:1rem}
   .about p strong{color:var(--green-900)}
   .chips{display:flex;flex-wrap:wrap;gap:10px;margin-top:1.4rem}
@@ -331,7 +331,7 @@
 <!-- ============ BARA DE SUS ============ -->
 <div class="topbar">
   <div class="container">
-    <p>Webinar gratuit · <span class="js-date">Data: [de completat]</span></p>
+    <p>Webinar gratuit · <span class="js-date">Vineri, 30 octombrie 2026, ora 19:30</span></p>
     <a class="btn ghost" href="#inscriere">Mă înscriu</a>
   </div>
 </div>
@@ -355,11 +355,11 @@
       <div class="meta">
         <div class="meta-item">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="3"/><path d="M8 3v4M16 3v4M3 10h18"/></svg>
-          <span class="js-date">Data: [de completat]</span>
+          <span class="js-date">Vineri, 30 octombrie 2026, ora 19:30</span>
         </div>
         <div class="meta-item">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="6" width="14" height="12" rx="3"/><path d="M16 10l6-3v10l-6-3"/></svg>
-          <span>Online, pe Zoom</span>
+          <span>Online, pe Microsoft Teams</span>
         </div>
       </div>
 
@@ -459,7 +459,7 @@
   <div class="container">
     <span class="script">Te aștept!</span>
     <h2>Rezervă-ți locul la webinar</h2>
-    <p><strong class="js-date">Data: [de completat]</strong> · online, pe Zoom · participarea este gratuită. Ai nevoie doar de un loc liniștit și de ceva de scris.</p>
+    <p><strong class="js-date">Vineri, 30 octombrie 2026, ora 19:30</strong> · online, pe Microsoft Teams · participarea este gratuită. Ai nevoie doar de un loc liniștit și de ceva de scris.</p>
     <a class="btn dark" href="#inscriere">
       Mă înscriu gratuit
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
@@ -584,7 +584,7 @@ Irina ❤️</p>
 <section class="about">
   <div class="container about-grid">
     <div class="about-photo">
-      <img loading="lazy" decoding="async" src="images/anna-verde.jpg" alt="Annamaria Roșu" width="1086" height="1448">
+      <img loading="lazy" decoding="async" src="images/anna-vie.jpg" alt="Annamaria Roșu" width="1086" height="1448">
     </div>
     <div>
       <span class="script coral">Cine sunt</span>
@@ -652,7 +652,7 @@ Irina ❤️</p>
       <span class="script coral">Înscriere gratuită</span>
       <h2>Rezervă-ți locul la „Comunicarea în cuplu”</h2>
       <div class="when">
-        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="3"/><path d="M8 3v4M16 3v4M3 10h18"/></svg><span class="js-date">Data: [de completat]</span></span>
+        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="3"/><path d="M8 3v4M16 3v4M3 10h18"/></svg><span class="js-date">Vineri, 30 octombrie 2026, ora 19:30</span></span>
         <span>Webinar gratuit</span>
       </div>
 
@@ -735,7 +735,7 @@ Irina ❤️</p>
 
 <script>
   // Data webinarului: schimbă AICI și apare peste tot în pagină (hero, banda de înscriere, formular).
-  var DATA_WEBINAR = "Data: [de completat]";   // ex: "Joi, 29 octombrie, ora 20:30"
+  var DATA_WEBINAR = "Vineri, 30 octombrie 2026, ora 19:30";   // ex: "Joi, 29 octombrie, ora 20:30"
 
   document.querySelectorAll('.js-date').forEach(function(el){ el.textContent = DATA_WEBINAR; });
   document.getElementById('an').textContent = new Date().getFullYear();
